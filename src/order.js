@@ -41,8 +41,8 @@ function searchOrder(deliveryOrders, objectItem) {
   for (i = 0; i < deliveryOrders.length; i ++) {
     if (deliveryOrders[i].item == objectItem) {
       return true
-    } else {
-      return false
     }
+  } return false
+
 }
-}
+// This last one was interesting. I tried to create an else condition that returned false if the objectItem didn't match the item in deliveryOrders, but then it always evaluated to false. My rock helped me but can't explain why that was happening.
